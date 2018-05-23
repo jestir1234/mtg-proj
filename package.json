@@ -10,8 +10,7 @@
     "build": "babel src -d dist",
     "mocha": "mocha --compilers js:babel-register",
     "test": "mocha --compilers js:babel-register --recursive ./test/",
-    "babel-watch":
-      "concurrently \"npx babel src --watch --out-dir dist --source-maps --ignore toBeIgnored --ignore dontCompileMe\" \"npx babel src --out-file ./build/compiled.js\"",
+    "babel-watch": "concurrently \"npx babel src --watch --out-dir dist --source-maps --ignore toBeIgnored --ignore dontCompileMe\" \"npx babel src --out-file ./build/compiled.js\"",
     "babel-copy": "npx babel ./src/dontCompileMe --out-dir dist --copy-files",
     "output-to-build": "npx babel src --out-file ./build/compiled.js"
   },
@@ -20,8 +19,10 @@
     "babel-cli": "^6.6.5",
     "babel-polyfill": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
+    "catbox": "^10.0.2",
+    "catbox-mongodb": "^4.2.0",
     "colors": "^1.2.4",
-    "express": "^4.16.2",
+    "hapi": "^17.5.0",
     "nodemon": "^1.17.4"
   },
   "devDependencies": {
@@ -30,6 +31,8 @@
     "mocha": "^5.1.1"
   },
   "babel": {
-    "presets": ["latest"]
+    "presets": [
+      "latest"
+    ]
   }
 }
