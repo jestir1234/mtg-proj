@@ -19,8 +19,6 @@
     "babel-cli": "^6.6.5",
     "babel-polyfill": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
-    "catbox": "^10.0.2",
-    "catbox-mongodb": "^4.2.0",
     "colors": "^1.2.4",
     "hapi": "^17.5.0",
     "nodemon": "^1.17.4"

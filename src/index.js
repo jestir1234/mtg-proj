@@ -25,6 +25,12 @@ server.route({
   path: "/cards",
   handler: (request, h) => {
     return server.methods.findCards(request.query);
+  },
+  options: {
+    cache: {
+      expiresIn: 30 * 1000,
+      privacy: "private"
+    }
   }
 });
 
